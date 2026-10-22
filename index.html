@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<title>PitWallet</title>
+<meta name="theme-color" content="#0d1117">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="PitWallet">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">€</span>PitWallet</div>
+  <button class="sync-pill" id="syncPill" data-a="sync" title="Sincronizar"><i></i><span>local</span></button>
+</header>
+
+<main id="view"></main>
+
+<button class="fab" data-a="add" aria-label="Añadir">+</button>
+
+<nav class="tabs">
+  <button data-a="tab" data-v="home"><b>◉</b>Inicio</button>
+  <button data-a="tab" data-v="tx"><b>☰</b>Movs</button>
+  <button data-a="tab" data-v="car"><b>⛽</b>Coche</button>
+  <button data-a="tab" data-v="stats"><b>▥</b>Stats</button>
+  <button data-a="tab" data-v="set"><b>⚙</b>Ajustes</button>
+</nav>
+
+<div class="backdrop" id="backdrop" data-a="closeSheet"></div>
+<section class="sheet" id="sheet"></section>
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
